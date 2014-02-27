@@ -14,6 +14,12 @@ $ git clone https://github.com/seff/nut.git themes/nut
 
 **Nut requires Hexo 2.4 and above.**
 
+**lodash and marked modules are required by Nut**
+``` sh
+npm install lodash --save
+npm install marked --save
+```
+
 ### Enable
 
 Modify `theme` setting in `_config.yml` to `nut`.
