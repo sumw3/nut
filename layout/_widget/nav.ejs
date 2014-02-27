@@ -3,7 +3,7 @@
   <ul class="pagination">
     <li>
       <% if (page.prev){ %>
-        <a href="<%= config.url %>/<%= page.prev.path %>" class="nav-prev">Prev</a>
+        <a href="<%- config.root %><%- page.prev.path %>" class="nav-prev">Prev</a>
       <% } else { %>
         <span class="nav-prev disabled">Prev</span>
       <% } %>
@@ -14,7 +14,7 @@
     </li>
     <li>
       <% if (page.next){ %>
-        <a href="<%= config.url %>/<%= page.next.path %>" class="nav-next">Next</a>
+        <a href="<%- config.root %><%- page.next.path %>" class="nav-next">Next</a>
       <% } else { %>
         <span class="nav-next disabled">Next</span>
       <% } %>
