@@ -1,7 +1,6 @@
 var _ = require('lodash'),
   path = require('path'),
   config = hexo.config,
-  toc = require('hexo/lib/plugins/helper/toc.js'),
   helper = hexo.extend.helper;
 
 var ct_name_to_id = function(ct){
@@ -64,7 +63,7 @@ var post_toc = function(post){
   if (info.length){
     tmp = post.replace(/<div [^><]*info[^><]*>.*<\/div>/, "");
   }
-  var t = toc(post, {list_number: false, class: 'article-toc'});
+  var t = helper.store.toc(post, {list_number: false, class: 'article-toc'});
 
   var rtn;
   if (t.length) {
