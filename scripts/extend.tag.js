@@ -100,7 +100,7 @@ var limg = function(args, content){
 var attach = function(args, content){
   var fileName = args[0];
   var path = args[1] || 'downloads';
-  var fullPath = path + '/' + fileName;
+  var fullPath = hexo.config.root + path + '/' + fileName;
 
   return '<a href="' + fullPath + '" download="' + fileName + '">' + fileName + '</a>'
 }
