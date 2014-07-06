@@ -10,7 +10,7 @@
           <div class="page-header">
             <h1 class="title">
           <% if (is_home()){ %>
-            <%- config.title %> <small><%- config.subtitle %></small>
+            <%- config.title %> <small><%- config.description %></small>
           <% } else if (is_archive()){ %>
             <% if (is_month()){ %>
               <time datetime="<%= date_xml(page.date) %>" itemprop="datePublished"><%= date(page.date, 'MMMM YYYY') %></time>

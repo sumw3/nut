@@ -1,17 +1,14 @@
 # Header
 menu:
-- name: Archives
+- name: 存档
   path: /archives
   logo: archive
-- name: Categories
+- name: 分类
   path: /categories
   logo: folder
-- name: Tags
+- name: 标签
   path: /tags
   logo: tags
-- name: Wiki
-  path: /wiki
-  logo: book
 - name: About
   path: /about
   logo: user
@@ -23,7 +20,7 @@ fancybox: true
 
 pages:
 - about
-- wiki
+# - wiki
 
 wiki_dir: wiki
 wiki_info:
@@ -35,13 +32,13 @@ home_widgets:
 - category
 - tag
 - archive
-- blogroll
+# - blogroll
 act_widgets:
 - search
 - recent_posts
-- blogroll
+# - blogroll
 post_widgets:
-- nav
+# - nav
 - post_date
 - post_category
 - post_tag
@@ -67,3 +64,6 @@ feed:
 
 sitemap:
   path: sitemap.xml
+
+# duoshuo
+duoshuo_shortname: sumw3
